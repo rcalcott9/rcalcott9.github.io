@@ -47,10 +47,6 @@ Earp, B. D., Mann, S. P., ... **Calcott, R.**, ... & Clark, M. S.<br>
 Earp, B.D., **Calcott, R.**, Reinecke, M., Everett, J.<br>
 *Handbook of Ethics and Social Psychology* (2024) [[Paper]](https://www.researchgate.net/profile/Brian-Earp-2/publication/384444225_Relational_Morality_in_Psychology_and_Philosophy_Past_Present_and_Future/links/67cc5686cc055043ce6f54a9/Relational-Morality-in-Psychology-and-Philosophy-Past-Present-and-Future.pdf) 
 
-## Tools 
-
-Here's a tool I built for managing and storing data: [[Research-Pipeline]](https://github.com/rcalcott9/research-pipeline.git)
-
 ## Teaching
 
 (Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '25
