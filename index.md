@@ -6,7 +6,7 @@ layout: home
 
 Hi! I'm Rachel.
 
-I'm a PhD student studying moral cognition at Harvard, advised by Fiery Cushman. 
+I'm a PhD student studying moral cognition at Harvard, advised by [Fiery Cushman](https://cushmanlab.fas.harvard.edu/). 
 
 I study how humans and AI systems engage in moral reasoning, how we update our own and others' moral values, and how values culturally evolve over time. To do this, I use behavioral and computational methods, and sometimes talk to strangers about their moral beliefs on the subway. 
 
@@ -22,11 +22,11 @@ I also love hearing from new people. You can schedule a meeting with me [here](h
 
 **Humans Initiate, LLMs Follow: Convention Lock-In and Adaptive Coordination in Human-LLM Groups**<br>
 **Calcott, R.**, Braga, A., Michala, J., Kleiman-Weiner, M.<br>
-*HAIC Workshop, NeurIPS* (2026)
+*HAIC Workshop, NeurIPS* (2026) [[Paper]](https://drive.google.com/file/d/10fj-hB35ZdMQZ3T0Y7Uoa4I-2jUE0qHU/view?usp=sharing)
 
 **Social Information Reshapes Moral Choice Beyond Belief Revision**<br>
 **Calcott, R.** & Cushman, F.<br>
-*Under review* (2026)
+*Under review* (2026) [[Paper]](https://drive.google.com/file/d/1XypGvnLnkkCUYXh9aBcctxMO8JJ2rzrW/view)
 
 **MoReBench: Evaluating Procedural and Pluralistic Moral Reasoning in Language Models**<br>
 Chiu, Y.Y., Lee, M., **Calcott, R.**, … Levine, S.<br>
@@ -38,7 +38,7 @@ Chiu, Y.Y., Lee, M., **Calcott, R.**, … Levine, S.<br>
 
 **To Revise or To Rationalize: Cognitive Mechanisms of Moral Inconsistency Resolution**<br>
 **Calcott, R.** & Cushman, F.<br>
-*Under review* (2026)
+*Under review* (2026) [[Paper]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7442634)
 
 **Model Evaluations Need Rigorous Human Baselines**<br>
 Wei, K., Paskov, P., … **Calcott, R.**, Coxon, E.<br>
@@ -54,7 +54,7 @@ Woodley, L.\*, Roberts-Gaal, X.\*, **Calcott, R.**\*, & Cushman, F.<br>
 
 **Relational Moral Philosophy Needs Relational Moral Psychology: A Relational Moral Theory**<br>
 **Calcott, R.** & Earp, B.D.<br>
-*Philosophical Psychology* (2025)
+*Philosophical Psychology* (2025) [[Paper]](https://ora.ox.ac.uk/objects/uuid:8be2ff51-e612-4626-8aff-3a3f99e9f31c/files/sf1881n461)
 
 **Relational Norms for Human-AI Cooperation**<br>
 Earp, B.D.\*, Mann, S.P.\*, **Calcott, R.**, … Savulescu, J., Clark, M.<br>
