@@ -18,36 +18,49 @@ I also love hearing from new people. You can schedule a meeting with me [here](h
 
 <br><br><br>
 
-## Representative Publications
+## Selected Publications
 
-**MoReBench: Evaluating Procedural and Pluralistic Moral Reasoning in Language Models, More than Outcomes**<br>
-Chiu, Y.Y., Lee, M., **Calcott, R.** ... Sydney Levine<br>
-*Preprint* (2025) [[Paper]](https://arxiv.org/abs/2510.16380) [[Website]](https://morebench.github.io)
+**Humans Initiate, LLMs Follow: Convention Lock-In and Adaptive Coordination in Human-LLM Groups**<br>
+**Calcott, R.**, Braga, A., Michala, J., Kleiman-Weiner, M.<br>
+*HAIC Workshop, NeurIPS* (2026)
+
+**Social Information Reshapes Moral Choice Beyond Belief Revision**<br>
+**Calcott, R.** & Cushman, F.<br>
+*Under review* (2026)
+
+**MoReBench: Evaluating Procedural and Pluralistic Moral Reasoning in Language Models**<br>
+Chiu, Y.Y., Lee, M., **Calcott, R.**, … Levine, S.<br>
+*ICLR* (2026) [[Paper]](https://arxiv.org/abs/2510.16380) [[Website]](https://morebench.github.io)
+
+**Superrational Coordination in LLMs**<br>
+**Calcott, R.**, Michala, J., Kleiman-Weiner, M.<br>
+*In prep* (2026)
+
+**To Revise or To Rationalize: Cognitive Mechanisms of Moral Inconsistency Resolution**<br>
+**Calcott, R.** & Cushman, F.<br>
+*Under review* (2026)
+
+**Model Evaluations Need Rigorous Human Baselines**<br>
+Wei, K., Paskov, P., … **Calcott, R.**, Coxon, E.<br>
+*ICML* (2025) [[Paper]](https://openreview.net/forum?id=gwhPvu97Gm)
 
 **Social Norms as Reinforcement: A Value Shaping Model of Moral Learning**<br>
 **Calcott, R.** & Cushman, F.<br>
-*Proceedings of the Annual Meeting of the Cognitive Science Society* (2025) [[Abstract]](https://escholarship.org/uc/item/024054w8)
-
-**Empirical Evidence for Reflective Equilibrium in Moral Judgments**<br>
-**Calcott, R.** & Cushman, F.<br>
-*Preprint* (2025) [[Paper]](https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=5087802)
-
-**Model Evaluations Need Rigorous Human Baselines**<br>
-Wei, K., Paskov, P. ... **Calcott, R.**, Coxon, E.<br>
-*ICML* (2025) [[Paper]](https://openreview.net/forum?id=gwhPvu97Gm)
+*Proceedings of the 47th Annual Meeting of the Cognitive Science Society* (2025) [[Abstract]](https://escholarship.org/uc/item/024054w8)
 
 **No Evidence of Experimenter Demand Effects in Three Online Psychology Experiments**<br>
 Woodley, L.\*, Roberts-Gaal, X.\*, **Calcott, R.**\*, & Cushman, F.<br>
-*Preprint* (2025) [[Paper]](https://files.osf.io/v1/resources/g6xhf_v1/providers/osfstorage/68c82b5040e1c8b1fb617d60?action=download&direct&version=1)<br>
+*Open Mind*, 10, 998–1016 (2025) [[Paper]](https://files.osf.io/v1/resources/g6xhf_v1/providers/osfstorage/68c82b5040e1c8b1fb617d60?action=download&direct&version=1)
+
+**Relational Moral Philosophy Needs Relational Moral Psychology: A Relational Moral Theory**<br>
+**Calcott, R.** & Earp, B.D.<br>
+*Philosophical Psychology* (2025)
+
+**Relational Norms for Human-AI Cooperation**<br>
+Earp, B.D.\*, Mann, S.P.\*, **Calcott, R.**, … Savulescu, J., Clark, M.<br>
+*Under review* (2025) [[Paper]](https://arxiv.org/pdf/2502.12102)
+
 \* = Equal contribution
-
-**Relational norms for human-AI cooperation**<br>
-Earp, B. D., Mann, S. P., ... **Calcott, R.**, ... & Clark, M. S.<br>
-*Preprint* (2025) [[Paper]](https://arxiv.org/pdf/2502.12102)
-
-**Relational Morality in Psychology and Philosophy: Past, Present, and Future**<br>
-Earp, B.D., **Calcott, R.**, Reinecke, M., Everett, J.<br>
-*Handbook of Ethics and Social Psychology* (2024) [[Paper]](https://www.researchgate.net/profile/Brian-Earp-2/publication/384444225_Relational_Morality_in_Psychology_and_Philosophy_Past_Present_and_Future/links/67cc5686cc055043ce6f54a9/Relational-Morality-in-Psychology-and-Philosophy-Past-Present-and-Future.pdf) 
 
 ## Teaching
 
