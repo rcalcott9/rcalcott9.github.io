@@ -2,13 +2,13 @@
 layout: home
 ---
 
-<img src="/assets/photo.png" alt="Rachel Calcott" width="400">
+<img src="/assets/photo.png?v=2" alt="Rachel Calcott" width="400">
 
 Hi! I'm Rachel.
 
 I'm a PhD student studying moral cognition at Harvard, advised by Fiery Cushman. 
 
-I study how humans and AI systems engage in moral reasoning, how we update our own and others' moral values, and how values culturally evolve over time. To do this, I use behavioral and computational methods, and sometimes talk to strangers about their moral values on the subway. 
+I study how humans and AI systems engage in moral reasoning, how we update our own and others' moral values, and how values culturally evolve over time. To do this, I use behavioral and computational methods, and sometimes talk to strangers about their moral beliefs on the subway. 
 
 I’m also an editor at [Pax Machina](https://paxmachina.ai), where we publish proposals and debates about the institutions we’ll need for a future with powerful AI. If you've been ruminating on a design principle or institution that could make the transition to powerful AI go better, please pitch us at editors@paxmachinamag.com.
 
