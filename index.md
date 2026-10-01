@@ -51,7 +51,7 @@ Earp, B.D., **Calcott, R.**, Reinecke, M., Everett, J.<br>
 
 ## Teaching
 
-(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '25
+(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '25<br>
 (Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '26
 
 
