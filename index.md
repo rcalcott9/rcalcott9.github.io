@@ -8,9 +8,11 @@ Hi! I'm Rachel.
 
 I'm a third year PhD student studying moral cognition at Harvard, advised by Fiery Cushman. 
 
-I'm interested in how minds develop normative beliefs and values, how we update our own and others' moral values, and how values culturally evolve over time. I study how people learn from thought experiments, how they learn from other humans, and how they learn from AI. To do this, I use behavioral and computational methods, and talk to strangers about their moral values on the subway. 
+I'm interested in how minds develop normative beliefs and values, how we update our own and others' moral values, and how values culturally evolve over time. I study how humans and AI systems engage in moral reasoning, how they learn from thought experiments, and how they learn from each other. To do this, I use behavioral and computational methods, and sometimes talk to strangers about their moral values on the subway. 
 
-Some other things I like: playing the bass guitar, trying to make sushi, running along the Charles river, reading and writing science fiction.
+I’m also an editor at [Pax Machina](https://paxmachina.ai), where we publish proposals and debates about the institutions we’ll need for a future with powerful AI. If you've been ruminating on a design principle or institution that could make the transition to powerful AI go better, please pitch us at editors@paxmachinamag.com.
+
+Some other things I like: playing the bass guitar, trying to make vegan sushi, running along the Charles river, reading and writing science fiction.
 
 I also love hearing from new people. You can schedule a meeting with me [here](https://calendar.app.google/BbNskPcYvtXZPTMt6), or reach out to me at rcalcott@g.harvard.edu.
 
@@ -50,6 +52,7 @@ Earp, B.D., **Calcott, R.**, Reinecke, M., Everett, J.<br>
 ## Teaching
 
 (Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '25
+(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '26
 
 
 
