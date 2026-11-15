@@ -20,6 +20,8 @@ I also love hearing from new people. You can schedule a meeting with me [here](h
 
 ## Selected Publications
 
+{% include paper-cards.html %}
+
 **Humans Initiate, LLMs Follow: Convention Lock-In and Adaptive Coordination in Human-LLM Groups**<br>
 **Calcott, R.**, Braga, A., Michala, J., Kleiman-Weiner, M.<br>
 *HAIC Workshop, NeurIPS* (2026) [[Paper]](https://drive.google.com/file/d/10fj-hB35ZdMQZ3T0Y7Uoa4I-2jUE0qHU/view?usp=sharing)

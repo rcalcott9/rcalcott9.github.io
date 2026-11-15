@@ -1,0 +1,295 @@
+<!-- Interactive paper thumbnails. Numbers come from each paper; see notes in captions. -->
+<section class="pc-grid" aria-label="Featured papers">
+
+  <article class="pc" data-card="initiate">
+    <div class="pc-meta">NeurIPS 2026 · HAIC Workshop</div>
+    <h3 class="pc-title">Humans Initiate, LLMs Follow</h3>
+    <p class="pc-take">When a better convention appears, humans switch and LLMs stick with precedent. In mixed teams, the LLMs follow the humans' lead.</p>
+    <div class="pc-tabs" role="group" aria-label="View"></div>
+    <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
+    <p class="pc-note" aria-live="polite"></p>
+    <div class="pc-links"><a href="https://drive.google.com/file/d/10fj-hB35ZdMQZ3T0Y7Uoa4I-2jUE0qHU/view?usp=sharing">Paper</a></div>
+  </article>
+
+  <article class="pc" data-card="socialinfo">
+    <div class="pc-meta">Under review · 2026</div>
+    <h3 class="pc-title">Social Information Reshapes Moral Choice Beyond Belief Revision</h3>
+    <p class="pc-take">Learning what others think shifts people's own moral choices, and the shift survives learning that the information was fake.</p>
+    <div class="pc-tabs" role="group" aria-label="View"></div>
+    <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
+    <p class="pc-note" aria-live="polite"></p>
+    <div class="pc-links"><a href="https://drive.google.com/file/d/1XypGvnLnkkCUYXh9aBcctxMO8JJ2rzrW/view">Paper</a></div>
+  </article>
+
+  <article class="pc" data-card="revise">
+    <div class="pc-meta">Under review · 2026</div>
+    <h3 class="pc-title">To Revise or To Rationalize</h3>
+    <p class="pc-take">When moral principles and judgments clash, people reconcile them if the conflict is undeniable, and rationalize when the details give them room.</p>
+    <div class="pc-tabs" role="group" aria-label="View"></div>
+    <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
+    <p class="pc-note" aria-live="polite"></p>
+    <div class="pc-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7442634">Paper</a></div>
+  </article>
+
+  <article class="pc" data-card="morebench">
+    <div class="pc-meta">ICLR 2026</div>
+    <h3 class="pc-title">MoReBench</h3>
+    <p class="pc-take">1,000 moral dilemmas and 23,000+ expert rubric criteria that grade how language models reason, not just what they conclude.</p>
+    <div class="pc-tabs" role="group" aria-label="View"></div>
+    <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
+    <p class="pc-note" aria-live="polite"></p>
+    <div class="pc-links"><a href="https://arxiv.org/abs/2510.16380">Paper</a><a href="https://morebench.github.io">Website</a></div>
+  </article>
+
+</section>
+
+<style>
+.pc-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin: 8px 0 36px; }
+@media (min-width: 700px) { .pc-grid { grid-template-columns: 1fr 1fr; } }
+.pc { --pc-ink: #111; --pc-muted: #666; --pc-line: #d4d4d4; --pc-bg: #fff;
+  position: relative; display: flex; flex-direction: column; min-width: 0;
+  border: 1px solid var(--pc-line); border-radius: 8px; padding: 16px 16px 14px;
+  background: var(--pc-bg); color: var(--pc-ink); }
+body.dark-mode .pc { --pc-ink: #e6e6e6; --pc-muted: #a8a8a8; --pc-line: #444; --pc-bg: #1f1f1f; }
+.pc-meta { font-size: 12px; color: var(--pc-muted); letter-spacing: .02em; }
+.pc-title { font-size: 17px; line-height: 1.3; margin: 4px 0 6px; font-weight: 600; }
+.pc-take { font-size: 14px; line-height: 1.45; margin: 0 0 10px; }
+.pc-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+.pc-tabs button { font: inherit; font-size: 12px; line-height: 1; padding: 6px 10px; cursor: pointer;
+  border: 1px solid var(--pc-ink); border-radius: 999px; background: transparent; color: var(--pc-ink); }
+.pc-tabs button[aria-pressed="true"] { background: var(--pc-ink); color: var(--pc-bg); }
+.pc-tabs button:focus-visible { outline: 2px solid var(--pc-ink); outline-offset: 2px; }
+.pc-fig { margin: 0; }
+.pc-svg svg { display: block; width: 100%; height: auto; overflow: visible; color: var(--pc-ink);
+  font-family: Arial, Helvetica, sans-serif; }
+.pc-svg .pc-hit { cursor: default; }
+.pc-svg .pc-anim { transition: all .45s ease; }
+.pc-cap { font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 1.35; color: var(--pc-muted); margin-top: 2px; }
+.pc-note { font-size: 13.5px; line-height: 1.45; margin: 8px 0 10px; min-height: 4.4em; }
+.pc-links { margin-top: auto; display: flex; gap: 14px; font-size: 14px; }
+.pc-links a::after { content: " \2192"; }
+.pc-tip { position: absolute; pointer-events: none; z-index: 5; max-width: 220px;
+  font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.3;
+  background: var(--pc-ink); color: var(--pc-bg); padding: 5px 8px; border-radius: 4px; opacity: 0; transition: opacity .12s; }
+.pc-tip.on { opacity: 1; }
+</style>
+
+<script>
+(function () {
+  var W = 300, H = 170, F = 'font-size="9"';
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function svg(inner, label) {
+    return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(label) + '">' + inner + '</svg>';
+  }
+  // Axis lines: thin black, left + bottom only, ticks outward.
+  function yAxis(x0, y0, y1, max, ticks, fmt, title) {
+    var s = '<line x1="' + x0 + '" y1="' + y0 + '" x2="' + x0 + '" y2="' + y1 + '" stroke="currentColor" stroke-width="0.8"/>';
+    ticks.forEach(function (t) {
+      var y = y0 - (y0 - y1) * t / max;
+      s += '<line x1="' + (x0 - 3) + '" y1="' + y + '" x2="' + x0 + '" y2="' + y + '" stroke="currentColor" stroke-width="0.8"/>' +
+           '<text x="' + (x0 - 5) + '" y="' + (y + 3) + '" text-anchor="end" fill="currentColor" ' + F + '>' + fmt(t) + '</text>';
+    });
+    if (title) s += '<text transform="translate(10 ' + ((y0 + y1) / 2) + ') rotate(-90)" text-anchor="middle" fill="currentColor" ' + F + '>' + title + '</text>';
+    return s;
+  }
+  function hit(x, y, w, h, tip) {
+    return '<rect class="pc-hit" x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" fill="transparent" data-tip="' + esc(tip) + '"/>';
+  }
+  function bar(x, y, w, h, solid, dashed) {
+    return '<rect class="pc-anim" x="' + x + '" y="' + y + '" width="' + w + '" height="' + Math.max(h, 0.8) + '" ' +
+      (solid ? 'fill="currentColor"' : 'fill="var(--pc-bg)" stroke="currentColor" stroke-width="1"') +
+      (dashed ? ' stroke-dasharray="3 2" fill-opacity="0"' : '') + '/>';
+  }
+
+  // Vertical bars. items: {label, sub, v, solid, tip, ghost}
+  function vbars(items, o) {
+    var x0 = 46, y0 = 140, y1 = 12, n = items.length, span = W - x0 - 10, bw = Math.min(54, span / n * 0.5);
+    var s = yAxis(x0, y0, y1, o.max, o.ticks, o.fmt, o.ytitle);
+    s += '<line x1="' + x0 + '" y1="' + y0 + '" x2="' + (W - 10) + '" y2="' + y0 + '" stroke="currentColor" stroke-width="0.8"/>';
+    items.forEach(function (d, i) {
+      var cx = x0 + span * (i + 0.5) / n, h = (y0 - y1) * d.v / o.max;
+      if (d.ghost != null) { var gh = (y0 - y1) * d.ghost / o.max; s += bar(cx - bw / 2, y0 - gh, bw, gh, false, true); }
+      s += bar(cx - bw / 2, y0 - h, bw, h, d.solid);
+      s += '<text x="' + cx + '" y="' + (y0 - h - 4) + '" text-anchor="middle" fill="currentColor" ' + F + '>' + o.fmt(d.v) + '</text>';
+      s += '<text x="' + cx + '" y="' + (y0 + 12) + '" text-anchor="middle" fill="currentColor" ' + F + '>' + d.label + '</text>';
+      if (d.sub) s += '<text x="' + cx + '" y="' + (y0 + 23) + '" text-anchor="middle" fill="currentColor" ' + F + '>' + d.sub + '</text>';
+      s += hit(cx - span / n / 2, y1, span / n, y0 - y1 + 24, d.tip);
+    });
+    return s;
+  }
+
+  // Horizontal bars. items: {label, v, solid, tip}
+  function hbars(items, o) {
+    var x0 = o.left || 120, x1 = W - 28, y1 = 10, rowH = (H - 40) / items.length, bh = Math.min(18, rowH * 0.55), y0 = y1 + rowH * items.length;
+    var s = '<line x1="' + x0 + '" y1="' + y1 + '" x2="' + x0 + '" y2="' + y0 + '" stroke="currentColor" stroke-width="0.8"/>' +
+            '<line x1="' + x0 + '" y1="' + y0 + '" x2="' + x1 + '" y2="' + y0 + '" stroke="currentColor" stroke-width="0.8"/>';
+    o.ticks.forEach(function (t) {
+      var x = x0 + (x1 - x0) * t / o.max;
+      s += '<line x1="' + x + '" y1="' + y0 + '" x2="' + x + '" y2="' + (y0 + 3) + '" stroke="currentColor" stroke-width="0.8"/>' +
+           '<text x="' + x + '" y="' + (y0 + 13) + '" text-anchor="middle" fill="currentColor" ' + F + '>' + o.fmt(t) + '</text>';
+    });
+    if (o.xtitle) s += '<text x="' + ((x0 + x1) / 2) + '" y="' + (y0 + 26) + '" text-anchor="middle" fill="currentColor" ' + F + '>' + o.xtitle + '</text>';
+    items.forEach(function (d, i) {
+      var cy = y1 + rowH * (i + 0.5), w = (x1 - x0) * d.v / o.max;
+      s += '<rect class="pc-anim" x="' + x0 + '" y="' + (cy - bh / 2) + '" width="' + Math.max(w, 0.8) + '" height="' + bh + '" ' +
+           (d.solid ? 'fill="currentColor"' : 'fill="var(--pc-bg)" stroke="currentColor" stroke-width="1"') + (d.faint ? ' opacity="0.35"' : '') + '/>';
+      s += '<text x="' + (x0 - 6) + '" y="' + (cy + 3) + '" text-anchor="end" fill="currentColor" ' + F + (d.faint ? ' opacity="0.55"' : '') + '>' + d.label + '</text>';
+      s += '<text x="' + (x0 + w + 4) + '" y="' + (cy + 3) + '" fill="currentColor" ' + F + (d.faint ? ' opacity="0.55"' : '') + '>' + (o.vfmt || o.fmt)(d.v) + '</text>';
+      s += hit(0, cy - rowH / 2, W, rowH, d.tip);
+    });
+    return s;
+  }
+
+  // Two-point slope chart. series: {name, a, b, square, dashed, tip}
+  function slope(series, o) {
+    var x0 = 46, y0 = 140, y1 = 12, xa = 92, xb = 214;
+    var s = yAxis(x0, y0, y1, 100, [0, 25, 50, 75, 100], function (t) { return t + '%'; }, o.ytitle);
+    s += '<line x1="' + x0 + '" y1="' + y0 + '" x2="' + (W - 10) + '" y2="' + y0 + '" stroke="currentColor" stroke-width="0.8"/>';
+    [[xa, o.la], [xb, o.lb]].forEach(function (p) {
+      s += '<line x1="' + p[0] + '" y1="' + y0 + '" x2="' + p[0] + '" y2="' + (y0 + 3) + '" stroke="currentColor" stroke-width="0.8"/>' +
+           '<text x="' + p[0] + '" y="' + (y0 + 13) + '" text-anchor="middle" fill="currentColor" ' + F + '>' + p[1] + '</text>';
+    });
+    function Y(v) { return y0 - (y0 - y1) * v / 100; }
+    function mark(x, y, sq) {
+      return sq ? '<rect x="' + (x - 4) + '" y="' + (y - 4) + '" width="8" height="8" fill="var(--pc-bg)" stroke="currentColor" stroke-width="1.2"/>'
+                : '<circle cx="' + x + '" cy="' + y + '" r="4.2" fill="currentColor"/>';
+    }
+    series.forEach(function (d, i) {
+      var ya = Y(d.a), yb = Y(d.b);
+      s += '<line x1="' + xa + '" y1="' + ya + '" x2="' + xb + '" y2="' + yb + '" stroke="currentColor" stroke-width="1.2"' + (d.dashed ? ' stroke-dasharray="4 3"' : '') + '/>';
+      s += mark(xa, ya, d.square) + mark(xb, yb, d.square);
+      // Upper series labels sit above its markers, lower series below, so the two never collide.
+      var up = d.a >= Math.max.apply(null, series.map(function (z) { return z.a; }));
+      s += '<text x="' + (xa - 9) + '" y="' + (up ? ya - 2 : ya + 9) + '" text-anchor="end" fill="currentColor" ' + F + '>' + d.a + '%</text>';
+      s += '<text x="' + (xb + 9) + '" y="' + (up ? yb - 4 : yb + 3) + '" fill="currentColor" ' + F + '>' + d.b + '%</text>';
+      var lx = 128 + i * 90;
+      s += '<line x1="' + lx + '" y1="10" x2="' + (lx + 18) + '" y2="10" stroke="currentColor" stroke-width="1.2"' + (d.dashed ? ' stroke-dasharray="4 3"' : '') + '/>' +
+           mark(lx + 9, 10, d.square) + '<text x="' + (lx + 23) + '" y="13" fill="currentColor" ' + F + '>' + d.name + '</text>';
+      s += '<polygon class="pc-hit" points="' + [xa - 10, ya - 10, xb + 10, yb - 10, xb + 10, yb + 10, xa - 10, ya + 10].join(' ') + '" fill="transparent" data-tip="' + esc(d.tip) + '"/>';
+    });
+    return s;
+  }
+
+  // Dot grid: rows of models by size; filled marker = best scorer in family.
+  function dotgrid(rows) {
+    var x0 = 92, cols = [140, 200, 260], y1 = 22, rowH = 24;
+    var s = '';
+    ['Smallest', 'Middle', 'Largest'].forEach(function (c, i) {
+      s += '<text x="' + cols[i] + '" y="10" text-anchor="middle" fill="currentColor" ' + F + '>' + c + '</text>';
+    });
+    rows.forEach(function (r, i) {
+      var y = y1 + rowH * (i + 0.5);
+      s += '<text x="' + x0 + '" y="' + (y + 3) + '" text-anchor="end" fill="currentColor" ' + F + '>' + r.family + '</text>';
+      var xs = r.models.length === 3 ? cols : [cols[0], cols[2]];
+      s += '<line x1="' + xs[0] + '" y1="' + y + '" x2="' + xs[xs.length - 1] + '" y2="' + y + '" stroke="currentColor" stroke-width="0.6" opacity="0.5"/>';
+      r.models.forEach(function (m, j) {
+        var best = j === r.best;
+        s += best ? '<circle cx="' + xs[j] + '" cy="' + y + '" r="5" fill="currentColor"/>'
+                  : '<circle cx="' + xs[j] + '" cy="' + y + '" r="4" fill="var(--pc-bg)" stroke="currentColor" stroke-width="1"/>';
+        s += '<text x="' + xs[j] + '" y="' + (y + 15) + '" text-anchor="middle" fill="currentColor" font-size="7.5">' + m + '</text>';
+        s += '<circle class="pc-hit" cx="' + xs[j] + '" cy="' + y + '" r="11" fill="transparent" data-tip="' +
+             esc(r.family + ' ' + m + (best ? ': top MoReBench score in its family' : '')) + '"/>';
+      });
+    });
+    return s;
+  }
+
+  var pct = function (t) { return Math.round(t) + '%'; };
+  var CARDS = {
+    initiate: [
+      { tab: 'Who switches?',
+        draw: function () { return svg(vbars([
+            { label: 'Humans', sub: 'human teams', v: 58.3, solid: true, tip: 'Humans in human-only teams: 58.3% switched in round 8' },
+            { label: 'GPT-5.5', sub: 'LLM teams', v: 8.3, tip: 'GPT-5.5 agents in LLM-only teams: 8.3% switched' },
+            { label: 'Claude Opus 4.8', sub: 'LLM teams', v: 1.7, tip: 'Claude Opus 4.8 agents in LLM-only teams: 1.7% switched' }
+          ], { max: 75, ticks: [0, 25, 50, 75], fmt: pct, ytitle: 'Switched to new letter' }), 'Bar chart: in round 8, 58% of humans, 8% of GPT-5.5 and 2% of Claude agents switched'); },
+        cap: 'Round 8, when two new letters start paying 20 points and the established letter still pays 10. Teams of six win only if all choose the same letter.',
+        note: 'Right after the payoff change, most humans try the better option. LLM-only teams barely move off the old convention.' },
+      { tab: 'Mixed teams recover',
+        draw: function () { return svg(slope([
+            { name: 'Claude teams', a: 87, b: 7, square: true, dashed: true, tip: 'Mixed teams with Claude Opus 4.8: 87% miscoordinated in round 8, 7% in round 14' },
+            { name: 'GPT-5.5 teams', a: 83, b: 0, tip: 'Mixed teams with GPT-5.5: 83% miscoordinated in round 8, 0% in round 14' }
+          ], { la: 'Round 8', lb: 'Round 14', ytitle: 'Teams miscoordinating' }), 'Slope chart: mixed-team miscoordination falls from 83 to 0 percent with GPT-5.5 and 87 to 7 percent with Claude'); },
+        cap: 'Mixed human–LLM teams. Filled circles, solid line: teams with GPT-5.5. Open squares, dashed line: teams with Claude Opus 4.8.',
+        note: 'Mixed teams clash at first, then recover within six rounds. LLMs follow transitions that humans start, so mixed teams reach the better letter more often than LLM-only teams.' }
+    ],
+    socialinfo: [
+      { tab: 'Before debunking',
+        draw: function () { return svg(vbars([
+            { label: 'Beliefs about', sub: 'the group', v: 1.19, tip: 'Effect on predictions of what others chose: 1.19 (log-odds)' },
+            { label: 'Own moral', sub: 'choices', v: 0.85, solid: true, tip: 'Effect on participants’ own choices: 0.85 (log-odds)' }
+          ], { max: 1.4, ticks: [0, 0.5, 1], fmt: function (t) { return (+t).toFixed(t % 1 ? 2 : 1).replace(/0+$/, '').replace(/\.$/, ''); }, ytitle: 'Effect of assigned majority' }), 'Before debunking: assigned majority shifts beliefs (1.19) and own choices (0.85)'); },
+        cap: 'Effect of being told the majority was utilitarian vs rule-based (log-odds). Beliefs: Study 2; choices: Study 1a, final trials.',
+        note: 'People who were told most others chose the utilitarian option predicted more utilitarian peers, and made more utilitarian choices themselves.' },
+      { tab: 'After debunking',
+        draw: function () { return svg(vbars([
+            { label: 'Beliefs about', sub: 'the group', v: 0.37, ghost: 1.19, tip: 'After debunking: 0.37, down from 1.19 (−69%)' },
+            { label: 'Own moral', sub: 'choices', v: 0.96, ghost: 0.85, solid: true, tip: 'After debunking: 0.96 (Study 3), vs 0.85 without debunking' }
+          ], { max: 1.4, ticks: [0, 0.5, 1], fmt: function (t) { return (+t).toFixed(t % 1 ? 2 : 1).replace(/0+$/, '').replace(/\.$/, ''); }, ytitle: 'Effect of assigned majority' }), 'After debunking: belief effect falls to 0.37, choice effect stays at 0.96'); },
+        cap: 'Dashed outlines show values before debunking. Beliefs: Study 2; choices: Study 3. Separate samples.',
+        note: 'Told the feedback was fabricated, people largely corrected their beliefs about the group (−69%). The effect on their own choices did not shrink. In a separate study, the learning still showed in people’s moral principles three days later (d = 0.32).' }
+    ],
+    revise: [
+      { tab: 'Identical cases',
+        draw: function () { return svg(hbars([
+            { label: 'Identical acts', v: 3, solid: true, tip: 'Identical acts: 3% of explanations invoked a new distinguishing detail' },
+            { label: 'Different but equivalent', v: 49, faint: true, tip: 'Superficially different acts: 49%' }
+          ], { max: 60, ticks: [0, 20, 40, 60], fmt: pct, left: 118, xtitle: 'Explanations inventing a distinguishing detail' }), 'Bar chart: 3 percent of explanations invent a distinguishing detail when the acts are identical'); },
+        cap: 'Participants punished a stranger and a friend or relative for the same harm, then explained their choices (Study 4).',
+        note: 'When the stranger and the friend did exactly the same thing, the inconsistency could not be explained away. People revised: they softened the stranger’s punishment, or endorsed impartiality less.' },
+      { tab: 'Superficially different cases',
+        draw: function () { return svg(hbars([
+            { label: 'Identical acts', v: 3, faint: true, tip: 'Identical acts: 3%' },
+            { label: 'Different but equivalent', v: 49, solid: true, tip: 'Superficially different acts (e.g. car crash vs boat accident): 49% invoked a new distinguishing detail' }
+          ], { max: 60, ticks: [0, 20, 40, 60], fmt: pct, left: 118, xtitle: 'Explanations inventing a distinguishing detail' }), 'Bar chart: 49 percent of explanations invent a distinguishing detail when the acts differ superficially'); },
+        cap: 'Acts were pretested as morally equivalent (e.g. a car crash vs a boat accident) and counterbalanced across stranger and friend.',
+        note: 'When the acts differed superficially, people kept both their lenient judgment and their principle. Half of their explanations added a new distinction (e.g. about how foreseeable the accident was), and they endorsed impartiality more strongly.' }
+    ],
+    morebench: [
+      { tab: 'Moral frameworks',
+        draw: function () { return svg(hbars([
+            { label: 'Kantian deontology', v: 65.9, solid: true, tip: 'Kantian deontology: mean 65.9' },
+            { label: 'Act utilitarianism', v: 64.8, solid: true, tip: 'Benthamite act utilitarianism: mean 64.8' },
+            { label: 'Virtue ethics', v: 58.0, tip: 'Aristotelian virtue ethics: mean 58.0' },
+            { label: 'Contractarianism', v: 56.7, tip: 'Gauthierian contractarianism: mean 56.7' }
+          ], { max: 80, ticks: [0, 20, 40, 60, 80], fmt: function (t) { return t; }, vfmt: function (v) { return v.toFixed(1); }, left: 104, xtitle: 'Mean MoReBench-Theory score' }), 'Bar chart: models score 65.9 on Kantian deontology and 64.8 on act utilitarianism, vs 58.0 on virtue ethics and 56.7 on contractarianism'); },
+        cap: 'Scores when models are asked to reason within one framework. Filled bars score significantly higher than open bars (all p < .001).',
+        note: 'Models reason better as Kantians or utilitarians than as virtue ethicists or contractarians, possibly a side effect of how they are trained.' },
+      { tab: 'Model size',
+        draw: function () { return svg(dotgrid([
+            { family: 'GPT-5 (high)', models: ['nano', 'mini', 'GPT-5'], best: 1 },
+            { family: 'Gemini 2.5', models: ['Flash-Lite', 'Flash', 'Pro'], best: 1 },
+            { family: 'Claude 4', models: ['Sonnet 4', 'Opus 4.1'], best: 0 },
+            { family: 'gpt-oss', models: ['20b', '120b'], best: 0 },
+            { family: 'Qwen3 Thinking', models: ['30B', '235B'], best: 0 }
+          ]), 'Dot grid: the largest model is never the top scorer in its family on MoReBench'); },
+        cap: 'Filled circle: highest-scoring model within each family on MoReBench-Regular (thinking traces). Open circles: other sizes.',
+        note: 'Bigger isn’t better here. The largest model never scored highest in its family, and math, code and preference benchmarks barely predict moral-reasoning scores (r ≈ 0.2).' }
+    ]
+  };
+
+  document.querySelectorAll('.pc[data-card]').forEach(function (card) {
+    var states = CARDS[card.getAttribute('data-card')], tabs = card.querySelector('.pc-tabs'),
+        box = card.querySelector('.pc-svg'), cap = card.querySelector('.pc-cap'), note = card.querySelector('.pc-note');
+    var tip = document.createElement('div'); tip.className = 'pc-tip'; card.appendChild(tip);
+    function show(i) {
+      box.innerHTML = states[i].draw(); cap.textContent = states[i].cap; note.textContent = states[i].note;
+      tabs.querySelectorAll('button').forEach(function (b, j) { b.setAttribute('aria-pressed', j === i ? 'true' : 'false'); });
+    }
+    states.forEach(function (st, i) {
+      var b = document.createElement('button'); b.type = 'button'; b.textContent = st.tab;
+      b.addEventListener('click', function () { show(i); }); tabs.appendChild(b);
+    });
+    box.addEventListener('mousemove', function (e) {
+      var t = e.target.closest && e.target.closest('[data-tip]');
+      if (!t) { tip.classList.remove('on'); return; }
+      var r = card.getBoundingClientRect();
+      tip.textContent = t.getAttribute('data-tip'); tip.classList.add('on');
+      var x = e.clientX - r.left + 12, maxX = r.width - tip.offsetWidth - 8;
+      tip.style.left = Math.min(x, maxX) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
+    });
+    box.addEventListener('mouseleave', function () { tip.classList.remove('on'); });
+    show(0);
+  });
+})();
+</script>
