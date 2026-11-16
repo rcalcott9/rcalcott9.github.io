@@ -4,7 +4,7 @@
   <article class="pc" data-card="initiate">
     <div class="pc-meta">NeurIPS 2026 · HAIC Workshop</div>
     <h3 class="pc-title">Humans Initiate, LLMs Follow</h3>
-    <p class="pc-take">When a better convention appears, humans switch and LLMs stick with precedent. In mixed teams, the LLMs follow the humans' lead.</p>
+    <p class="pc-take">While humans frequently initiate transitions to a higher-payoff convention, LLM-only groups largely stick to precedent. Mixed human–LLM groups miscoordinate at first, but quickly adapt.</p>
     <div class="pc-tabs" role="group" aria-label="View"></div>
     <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
     <p class="pc-note" aria-live="polite"></p>
@@ -24,7 +24,7 @@
   <article class="pc" data-card="revise">
     <div class="pc-meta">Under review · 2026</div>
     <h3 class="pc-title">To Revise or To Rationalize</h3>
-    <p class="pc-take">When moral principles and judgments clash, people reconcile them if the conflict is undeniable, and rationalize when the details give them room.</p>
+    <p class="pc-take">When moral conflicts between principles and judgments cannot be ignored, participants reconcile them; but when superficial differences in cases permit auxiliary distinctions, they rationalize.</p>
     <div class="pc-tabs" role="group" aria-label="View"></div>
     <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
     <p class="pc-note" aria-live="polite"></p>
@@ -34,7 +34,7 @@
   <article class="pc" data-card="morebench">
     <div class="pc-meta">ICLR 2026</div>
     <h3 class="pc-title">MoReBench</h3>
-    <p class="pc-take">1,000 moral dilemmas and 23,000+ expert rubric criteria that grade how language models reason, not just what they conclude.</p>
+    <p class="pc-take">1,000 moral scenarios, each paired with a set of rubric criteria that experts consider essential to include (or avoid) when reasoning about the scenarios.</p>
     <div class="pc-tabs" role="group" aria-label="View"></div>
     <figure class="pc-fig"><div class="pc-svg"></div><figcaption class="pc-cap"></figcaption></figure>
     <p class="pc-note" aria-live="polite"></p>
@@ -204,14 +204,14 @@ body.dark-mode .pc { --pc-ink: #e6e6e6; --pc-muted: #a8a8a8; --pc-line: #444; --
             { label: 'Claude Opus 4.8', sub: 'LLM teams', v: 1.7, tip: 'Claude Opus 4.8 agents in LLM-only teams: 1.7% switched' }
           ], { max: 75, ticks: [0, 25, 50, 75], fmt: pct, ytitle: 'Switched to new letter' }), 'Bar chart: in round 8, 58% of humans, 8% of GPT-5.5 and 2% of Claude agents switched'); },
         cap: 'Round 8, when two new letters start paying 20 points and the established letter still pays 10. Teams of six win only if all choose the same letter.',
-        note: 'Right after the payoff change, most humans try the better option. LLM-only teams barely move off the old convention.' },
+        note: 'In the Letter Game, coordination on an established convention is challenged by the introduction of new higher-payoff alternatives. Humans frequently initiate transitions; LLM-only groups largely stick to precedent.' },
       { tab: 'Mixed teams recover',
         draw: function () { return svg(slope([
             { name: 'Claude teams', a: 87, b: 7, square: true, dashed: true, tip: 'Mixed teams with Claude Opus 4.8: 87% miscoordinated in round 8, 7% in round 14' },
             { name: 'GPT-5.5 teams', a: 83, b: 0, tip: 'Mixed teams with GPT-5.5: 83% miscoordinated in round 8, 0% in round 14' }
           ], { la: 'Round 8', lb: 'Round 14', ytitle: 'Teams miscoordinating' }), 'Slope chart: mixed-team miscoordination falls from 83 to 0 percent with GPT-5.5 and 87 to 7 percent with Claude'); },
         cap: 'Mixed human–LLM teams. Filled circles, solid line: teams with GPT-5.5. Open squares, dashed line: teams with Claude Opus 4.8.',
-        note: 'Mixed teams clash at first, then recover within six rounds. LLMs follow transitions that humans start, so mixed teams reach the better letter more often than LLM-only teams.' }
+        note: 'Despite different initial strategies, mixed human–LLM groups can recover coordination as LLMs follow human-initiated transitions.' }
     ],
     socialinfo: [
       { tab: 'Before debunking',
@@ -220,30 +220,30 @@ body.dark-mode .pc { --pc-ink: #e6e6e6; --pc-muted: #a8a8a8; --pc-line: #444; --
             { label: 'Own moral', sub: 'choices', v: 0.85, solid: true, tip: 'Effect on participants’ own choices: 0.85 (log-odds)' }
           ], { max: 1.4, ticks: [0, 0.5, 1], fmt: function (t) { return (+t).toFixed(t % 1 ? 2 : 1).replace(/0+$/, '').replace(/\.$/, ''); }, ytitle: 'Effect of assigned majority' }), 'Before debunking: assigned majority shifts beliefs (1.19) and own choices (0.85)'); },
         cap: 'Effect of being told the majority was utilitarian vs rule-based (log-odds). Beliefs: Study 2; choices: Study 1a, final trials.',
-        note: 'People who were told most others chose the utilitarian option predicted more utilitarian peers, and made more utilitarian choices themselves.' },
+        note: 'Learning about others’ moral judgments reliably shifts participants’ own moral judgments (Study 1a).' },
       { tab: 'After debunking',
         draw: function () { return svg(vbars([
             { label: 'Beliefs about', sub: 'the group', v: 0.37, ghost: 1.19, tip: 'After debunking: 0.37, down from 1.19 (−69%)' },
             { label: 'Own moral', sub: 'choices', v: 0.96, ghost: 0.85, solid: true, tip: 'After debunking: 0.96 (Study 3), vs 0.85 without debunking' }
           ], { max: 1.4, ticks: [0, 0.5, 1], fmt: function (t) { return (+t).toFixed(t % 1 ? 2 : 1).replace(/0+$/, '').replace(/\.$/, ''); }, ytitle: 'Effect of assigned majority' }), 'After debunking: belief effect falls to 0.37, choice effect stays at 0.96'); },
         cap: 'Dashed outlines show values before debunking. Beliefs: Study 2; choices: Study 3. Separate samples.',
-        note: 'Told the feedback was fabricated, people largely corrected their beliefs about the group (−69%). The effect on their own choices did not shrink. In a separate study, the learning still showed in people’s moral principles three days later (d = 0.32).' }
+        note: 'After participants were told the majority’s preferences had been fabricated, their beliefs about the group were substantially revised (−69%), yet their own moral choices remained influenced by the prior moral learning. This learning effect extended to abstract moral principles measured three days later (Study 4, d = 0.32).' }
     ],
     revise: [
       { tab: 'Identical cases',
         draw: function () { return svg(hbars([
-            { label: 'Identical acts', v: 3, solid: true, tip: 'Identical acts: 3% of explanations invoked a new distinguishing detail' },
-            { label: 'Different but equivalent', v: 49, faint: true, tip: 'Superficially different acts: 49%' }
-          ], { max: 60, ticks: [0, 20, 40, 60], fmt: pct, left: 118, xtitle: 'Explanations inventing a distinguishing detail' }), 'Bar chart: 3 percent of explanations invent a distinguishing detail when the acts are identical'); },
-        cap: 'Participants punished a stranger and a friend or relative for the same harm, then explained their choices (Study 4).',
-        note: 'When the stranger and the friend did exactly the same thing, the inconsistency could not be explained away. People revised: they softened the stranger’s punishment, or endorsed impartiality less.' },
+            { label: 'Control', v: 3, solid: true, tip: 'Control condition (identical cases): 3% of explanations invoked auxiliary rationalizations' },
+            { label: 'Rationalization', v: 49, faint: true, tip: 'Rationalization condition: 49%' }
+          ], { max: 60, ticks: [0, 20, 40, 60], fmt: pct, left: 118, xtitle: 'Rationalizations' }), 'Bar chart: auxiliary rationalizations in 3 percent of explanations in the control condition'); },
+        cap: 'Free-response explanations coded for auxiliary rationalizations: new, case-specific assumptions not stated in the vignette (Study 4).',
+        note: 'When inconsistencies are made salient and constraints force direct comparison, participants revise their principles or judgments to bring them into alignment.' },
       { tab: 'Superficially different cases',
         draw: function () { return svg(hbars([
-            { label: 'Identical acts', v: 3, faint: true, tip: 'Identical acts: 3%' },
-            { label: 'Different but equivalent', v: 49, solid: true, tip: 'Superficially different acts (e.g. car crash vs boat accident): 49% invoked a new distinguishing detail' }
-          ], { max: 60, ticks: [0, 20, 40, 60], fmt: pct, left: 118, xtitle: 'Explanations inventing a distinguishing detail' }), 'Bar chart: 49 percent of explanations invent a distinguishing detail when the acts differ superficially'); },
-        cap: 'Acts were pretested as morally equivalent (e.g. a car crash vs a boat accident) and counterbalanced across stranger and friend.',
-        note: 'When the acts differed superficially, people kept both their lenient judgment and their principle. Half of their explanations added a new distinction (e.g. about how foreseeable the accident was), and they endorsed impartiality more strongly.' }
+            { label: 'Control', v: 3, faint: true, tip: 'Control condition: 3%' },
+            { label: 'Rationalization', v: 49, solid: true, tip: 'Rationalization condition (superficially different cases): 49% of explanations invoked auxiliary rationalizations' }
+          ], { max: 60, ticks: [0, 20, 40, 60], fmt: pct, left: 118, xtitle: 'Rationalizations' }), 'Bar chart: auxiliary rationalizations in 49 percent of explanations in the rationalization condition'); },
+        cap: 'Free-response explanations coded for auxiliary rationalizations: new, case-specific assumptions not stated in the vignette (Study 4).',
+        note: 'When ambiguity allows, they rationalize, maintaining both principles and judgments by introducing auxiliary distinctions (e.g., “anybody could have made that mistake!”). Participants in the rationalization condition produced markedly more such explanations than those in the control condition (49% vs 3%).' }
     ],
     morebench: [
       { tab: 'Moral frameworks',
@@ -254,7 +254,7 @@ body.dark-mode .pc { --pc-ink: #e6e6e6; --pc-muted: #a8a8a8; --pc-line: #444; --
             { label: 'Contractarianism', v: 56.7, tip: 'Gauthierian contractarianism: mean 56.7' }
           ], { max: 80, ticks: [0, 20, 40, 60, 80], fmt: function (t) { return t; }, vfmt: function (v) { return v.toFixed(1); }, left: 104, xtitle: 'Mean MoReBench-Theory score' }), 'Bar chart: models score 65.9 on Kantian deontology and 64.8 on act utilitarianism, vs 58.0 on virtue ethics and 56.7 on contractarianism'); },
         cap: 'Scores when models are asked to reason within one framework. Filled bars score significantly higher than open bars (all p < .001).',
-        note: 'Models reason better as Kantians or utilitarians than as virtue ethicists or contractarians, possibly a side effect of how they are trained.' },
+        note: 'Models show partiality towards specific moral frameworks (e.g., Benthamite Act Utilitarianism and Kantian Deontology), which might be side effects of popular training paradigms.' },
       { tab: 'Model size',
         draw: function () { return svg(dotgrid([
             { family: 'GPT-5 (high)', models: ['nano', 'mini', 'GPT-5'], best: 1 },
@@ -264,7 +264,7 @@ body.dark-mode .pc { --pc-ink: #e6e6e6; --pc-muted: #a8a8a8; --pc-line: #444; --
             { family: 'Qwen3 Thinking', models: ['30B', '235B'], best: 0 }
           ]), 'Dot grid: the largest model is never the top scorer in its family on MoReBench'); },
         cap: 'Filled circle: highest-scoring model within each family on MoReBench-Regular (thinking traces). Open circles: other sizes.',
-        note: 'Bigger isn’t better here. The largest model never scored highest in its family, and math, code and preference benchmarks barely predict moral-reasoning scores (r ≈ 0.2).' }
+        note: 'Scaling laws and existing benchmarks on math, code, and scientific reasoning tasks fail to predict models’ abilities to perform moral reasoning.' }
     ]
   };
 
