@@ -101,3 +101,10 @@ html {
 #way-through {
   scroll-margin-top: 20px;
 }
+
+/* Way Through App thumbnail */
+.wt-thumb img {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+}
