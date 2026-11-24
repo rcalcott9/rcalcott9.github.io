@@ -75,6 +75,8 @@ Earp, B.D.\*, Mann, S.P.\*, **Calcott, R.**, … Savulescu, J., Clark, M.<br>
 Review of Clark Elliott's *The Ghost in My Brain*, a memoir of concussion recovery.<br>
 *Astral Codex Ten Book Review Contest, finalist* (2026) [[Read]](https://www.astralcodexten.com/p/your-book-review-the-ghost-in-my)
 
+I write a Substack, [*Drift Diffusion*](https://substack.com/@rachelcalcott9).
+
 I've also written for the *Yale Herald* and the [*Yale Daily News*](https://yaledailynews.com/blog/author/rachelcalcott), and I'm an editor at [*Pax Machina*](https://paxmachina.ai).
 
 ### Way Through
