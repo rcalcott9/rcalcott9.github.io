@@ -91,3 +91,12 @@ img[alt="Rachel Calcott"] {
   margin-bottom: 20px;
   border-radius: 10px;
 }
+
+/* Smooth jump to on-page sections (e.g. Writing tab) */
+html {
+  scroll-behavior: smooth;
+}
+
+#writing {
+  scroll-margin-top: 20px;
+}
