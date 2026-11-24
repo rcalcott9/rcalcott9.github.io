@@ -75,9 +75,9 @@ In a former life, I wrote for the [*Yale Daily News*](https://yaledailynews.com/
 
 ## Way Through App {#way-through}
 
-<a href="https://rcalcott9.github.io/pcs-website/" class="wt-thumb"><img src="/assets/waythrough-wheel.png" alt="The Way Through concussion wheel: Concussion at the center, with Vision, Balance, Exercise, Sleep, Headache, Neck, Mood and Thinking around it" width="260"></a>
+{% include wt-wheel.html %}
 
-In 2024 I got seriously concussed, and remained concussed for the next two years. Few people talk about long-lasting concussion symptoms (sometimes called post-concussion syndrome), but studies estimate that 10% to 30% of concussions result in persistent symptoms. I'm one of the lucky ones who fully recovered. After finally finding a treatment that worked for me, I built [Way Through](https://rcalcott9.github.io/pcs-website/), a website that summarizes the current scientific literature on concussion treatment. I'm always happy to chat with people trying to find their own way through (email: [rcalcott@g.harvard.edu](mailto:rcalcott@g.harvard.edu)).
+In 2024 I got concussed, and remained seriously concussed for the next two years. Few people talk about long-lasting concussion symptoms (sometimes called post-concussion syndrome), but studies estimate that 10% to 30% of concussions result in persistent symptoms. I'm one of the lucky ones who fully recovered. After finally finding a treatment that worked for me, I built [Way Through](https://rcalcott9.github.io/pcs-website/), a website that summarizes and guides you through the scientific literature on concussion treatment. I'm always happy to chat with people trying to find their own way through (email: [rcalcott@g.harvard.edu](mailto:rcalcott@g.harvard.edu)).
 
 ## Teaching
 

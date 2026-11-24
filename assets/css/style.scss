@@ -102,9 +102,59 @@ html {
   scroll-margin-top: 20px;
 }
 
-/* Way Through App thumbnail */
-.wt-thumb img {
-  display: block;
-  margin: 0 auto 16px;
-  border-radius: 12px;
+/* Way Through App: interactive concussion wheel (float right of the text) */
+.wt-wheel {
+  --wt-bg: #efeae2; --wt-surface: #e5dfd5; --wt-path: #dcd5c9; --wt-stop: #5f7f6b; --wt-text: #2f343a;
+  --wt-vision: #4f6a88; --wt-balance: #6a5d8c; --wt-exercise: #8f5f3e; --wt-sleep: #3f6d74; --wt-headache: #8a4f52; --wt-neck: #76622c; --wt-mood: #7a5576; --wt-thinking: #4d6b4f;
+  float: right;
+  width: 250px;
+  margin: 4px 0 16px 24px;
+  padding: 6px;
+  border-radius: 14px;
+  background: var(--wt-bg);
+  transition: background-color 0.3s ease;
 }
+body.dark-mode .wt-wheel {
+  --wt-bg: #000000; --wt-surface: #1d2126; --wt-path: #323941; --wt-stop: #7f9a88; --wt-text: #dcd6cc;
+  --wt-vision: #8aa6c4; --wt-balance: #a99cc8; --wt-exercise: #d0a07c; --wt-sleep: #7fa9b0; --wt-headache: #c99090; --wt-neck: #c8b47a; --wt-mood: #b997b6; --wt-thinking: #8fb08f;
+}
+.wt-wheel svg { display: block; width: 100%; height: auto; overflow: visible; }
+.wt-rim { fill: none; stroke: var(--wt-path); stroke-width: 6; }
+.wt-spoke { stroke: var(--wt-path); stroke-width: 6; stroke-linecap: round; transition: stroke 0.25s ease; }
+.wt-hub circle { fill: var(--wt-surface); stroke: var(--wt-stop); stroke-width: 3; }
+.wt-hub text { fill: var(--wt-text); font-size: 13.5px; font-weight: 600; }
+.wt-dot { fill: var(--c); }
+.wt-icon { fill: none; stroke: var(--wt-bg); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.wt-label { fill: var(--wt-text); font-size: 15px; }
+.wt-n, .wt-hub { transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.wt-wheel:hover .wt-n { transform: translate(calc(var(--ux) * 5px), calc(var(--uy) * 5px)); }
+.wt-wheel:hover .wt-hub { transform: scale(1.04); }
+.wt-node:hover .wt-n,
+.wt-node:focus-visible .wt-n { transform: translate(calc(var(--ux) * 13px), calc(var(--uy) * 13px)) scale(1.16); }
+.wt-node:hover .wt-label, .wt-node:focus-visible .wt-label { font-weight: 600; }
+.wt-hubl:hover .wt-hub { transform: scale(1.1); }
+.wt-node:focus-visible, .wt-hubl:focus-visible { outline: none; }
+.wt-node:focus-visible .wt-dot { stroke: var(--wt-text); stroke-width: 3; }
+.wt-wheel:has(.wt-node[data-slug="vision"]:hover) .wt-s-vision,
+.wt-wheel:has(.wt-node[data-slug="vision"]:focus-visible) .wt-s-vision { stroke: var(--wt-vision); }
+.wt-wheel:has(.wt-node[data-slug="balance"]:hover) .wt-s-balance,
+.wt-wheel:has(.wt-node[data-slug="balance"]:focus-visible) .wt-s-balance { stroke: var(--wt-balance); }
+.wt-wheel:has(.wt-node[data-slug="exercise"]:hover) .wt-s-exercise,
+.wt-wheel:has(.wt-node[data-slug="exercise"]:focus-visible) .wt-s-exercise { stroke: var(--wt-exercise); }
+.wt-wheel:has(.wt-node[data-slug="sleep"]:hover) .wt-s-sleep,
+.wt-wheel:has(.wt-node[data-slug="sleep"]:focus-visible) .wt-s-sleep { stroke: var(--wt-sleep); }
+.wt-wheel:has(.wt-node[data-slug="headache"]:hover) .wt-s-headache,
+.wt-wheel:has(.wt-node[data-slug="headache"]:focus-visible) .wt-s-headache { stroke: var(--wt-headache); }
+.wt-wheel:has(.wt-node[data-slug="neck"]:hover) .wt-s-neck,
+.wt-wheel:has(.wt-node[data-slug="neck"]:focus-visible) .wt-s-neck { stroke: var(--wt-neck); }
+.wt-wheel:has(.wt-node[data-slug="mood"]:hover) .wt-s-mood,
+.wt-wheel:has(.wt-node[data-slug="mood"]:focus-visible) .wt-s-mood { stroke: var(--wt-mood); }
+.wt-wheel:has(.wt-node[data-slug="thinking"]:hover) .wt-s-thinking,
+.wt-wheel:has(.wt-node[data-slug="thinking"]:focus-visible) .wt-s-thinking { stroke: var(--wt-thinking); }
+@media (prefers-reduced-motion: reduce) {
+  .wt-n, .wt-hub, .wt-spoke { transition: none; }
+}
+@media (max-width: 600px) {
+  .wt-wheel { float: none; margin: 0 auto 16px; }
+}
+#teaching { clear: both; }
