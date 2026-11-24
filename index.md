@@ -76,7 +76,7 @@ Review of Clark Elliott's *The Ghost in My Brain*, a memoir of concussion recove
 
 I write a Substack, [*Drift Diffusion*](https://substack.com/@rachelcalcott9).
 
-In a former life, I wrote for the [*Yale Daily News*](https://yaledailynews.com/blog/2021/01/31/feature-discounting-hazard/), edited the [*Yale Herald*](https://medium.com/the-yale-herald/migrating-minds-on-the-evolving-nature-of-african-brain-drain-318f2df0f858), and interned at [*Texas Monthly*](https://www.texasmonthly.com/news-politics/excess-vaccine-doses-el-paso-truckers/), the national magazine of Texas.
+In a former life, I wrote for the [*Yale Daily News*](https://yaledailynews.com/author/rachel-calcott), edited the [*Yale Herald*](https://medium.com/the-yale-herald/migrating-minds-on-the-evolving-nature-of-african-brain-drain-318f2df0f858), and interned at [*Texas Monthly*](https://www.texasmonthly.com/news-politics/excess-vaccine-doses-el-paso-truckers/), the national magazine of Texas.
 
 ## Way Through {#way-through}
 
