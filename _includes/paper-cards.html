@@ -5,7 +5,7 @@
     <div class="pc-meta">NeurIPS 2026 · HAIC Workshop</div>
     <h3 class="pc-title">Humans Initiate, LLMs Follow</h3>
     <p class="pc-take">While humans frequently initiate transitions to a higher-payoff convention, LLM-only groups largely stick to precedent. Mixed human–LLM groups miscoordinate at first, but quickly adapt.</p>
-    <figure class="pc-fig"><img src="{{ '/assets/papers/initiate.png' | relative_url }}" alt="Line plot: share of players choosing M or N across 14 rounds, for all-human, mixed and all-LLM teams with GPT-5.5 (left) and Claude Opus 4.8 (right)" loading="lazy"><figcaption class="pc-cap">Fig. 1: Rate of switching to the higher-value letters (M or N) across the 14 rounds of the coordination game, shown separately for all-human participants, mixed teams, and all-LLM agents.</figcaption></figure>
+    <figure class="pc-fig"><p class="pc-fig-title">Humans switch to the better option; LLMs stick with precedent</p><img src="{{ '/assets/papers/initiate.png' | relative_url }}" alt="Line plot: share of players choosing M or N across 14 rounds, for all-human, mixed and all-LLM teams with GPT-5.5 (left) and Claude Opus 4.8 (right)" loading="lazy"><figcaption class="pc-cap">Fig. 1: Rate of switching to the higher-value letters (M or N) across the 14 rounds of the coordination game, shown separately for all-human participants, mixed teams, and all-LLM agents.</figcaption></figure>
     <div class="pc-links"><a href="https://drive.google.com/file/d/10fj-hB35ZdMQZ3T0Y7Uoa4I-2jUE0qHU/view?usp=sharing">Paper</a></div>
   </article>
 
@@ -13,7 +13,7 @@
     <div class="pc-meta">Under review · 2026</div>
     <h3 class="pc-title">Social Information Reshapes Moral Choice Beyond Belief Revision</h3>
     <p class="pc-take">Learning what others think shifts people's own moral choices, and the shift persists even after learning that the information about others was false.</p>
-    <figure class="pc-fig"><img src="{{ '/assets/papers/socialinfo.png' | relative_url }}" alt="Two dot plots: utilitarian majority predictions shrink after debunking, while utilitarian choices persist" loading="lazy"><figcaption class="pc-cap">Fig. 5. Condition-aligned beliefs change while choices persist after belief intervention.</figcaption></figure>
+    <figure class="pc-fig"><p class="pc-fig-title">Correcting beliefs about others doesn’t undo moral choices</p><img src="{{ '/assets/papers/socialinfo.png' | relative_url }}" alt="Two dot plots: utilitarian majority predictions shrink after debunking, while utilitarian choices persist" loading="lazy"><figcaption class="pc-cap">Fig. 5. Condition-aligned beliefs change while choices persist after belief intervention.</figcaption></figure>
     <div class="pc-links"><a href="https://drive.google.com/file/d/1XypGvnLnkkCUYXh9aBcctxMO8JJ2rzrW/view">Paper</a></div>
   </article>
 
@@ -21,7 +21,7 @@
     <div class="pc-meta">Under review · 2026</div>
     <h3 class="pc-title">To Revise or To Rationalize</h3>
     <p class="pc-take">When moral conflicts between principles and judgments cannot be ignored, participants reconcile them; but when superficial differences in cases permit auxiliary distinctions, they rationalize.</p>
-    <figure class="pc-fig"><img src="{{ '/assets/papers/revise.png' | relative_url }}" alt="Violin plot: impartiality endorsement is higher in the Rationalization condition (mean 76.25) than Control (mean 67.69)" loading="lazy"><figcaption class="pc-cap">Fig. 7a: Participants in the manipulation condition (rationalization) demonstrated a significantly higher endorsement of the principle of impartiality.</figcaption></figure>
+    <figure class="pc-fig"><p class="pc-fig-title">When cases differ, people explain away the inconsistency</p><img src="{{ '/assets/papers/revise.png' | relative_url }}" alt="Stacked bars: 49% of explanations in the rationalization condition were coded as rationalization, versus 3% in the control condition" loading="lazy"><figcaption class="pc-cap">Fig. 7b: Participants’ free-response explanations were coded by content, revealing the prevalence of auxiliary explanations in the rationalization condition.</figcaption></figure>
     <div class="pc-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7442634">Paper</a></div>
   </article>
 
@@ -29,7 +29,7 @@
     <div class="pc-meta">ICLR 2026</div>
     <h3 class="pc-title">MoReBench</h3>
     <p class="pc-take">1,000 moral scenarios, each paired with a set of rubric criteria that experts consider essential to include (or avoid) when reasoning about the scenarios.</p>
-    <figure class="pc-fig"><img src="{{ '/assets/papers/morebench.png' | relative_url }}" alt="Diagram: a moral dilemma prompt, a candidate reasoning process, and rubric criteria graded by a judge model" loading="lazy"><figcaption class="pc-cap">Figure 1: MoReBench contains moral dilemma scenarios, each accompanied by a set of moral-philosophers-written criteria that can be individually fulfilled (or not) by a model’s reasoning process.</figcaption></figure>
+    <figure class="pc-fig"><p class="pc-fig-title">Bigger models aren’t always better moral reasoners</p><img src="{{ '/assets/papers/morebench.png' | relative_url }}" alt="Bar chart: MoReBench-Regular and MoReBench-Hard scores for models in the GPT-5, Claude, Gemini-2.5, GPT-oss, DeepSeek and Qwen3 families" loading="lazy"><figcaption class="pc-cap">Figure 3: MoReBench on Thinking Trace.</figcaption></figure>
     <div class="pc-links"><a href="https://arxiv.org/abs/2510.16380">Paper</a><a href="https://morebench.github.io">Website</a></div>
   </article>
 
@@ -47,6 +47,7 @@ body.dark-mode .pc { --pc-ink: #e6e6e6; --pc-muted: #a8a8a8; --pc-line: #444; --
 .pc-title { font-size: 17px; line-height: 1.3; margin: 4px 0 6px; font-weight: 600; }
 .pc-take { font-size: 14px; line-height: 1.45; margin: 0 0 10px; }
 .pc-fig { margin: 0 0 12px; }
+.pc-fig-title { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 600; text-align: center; margin: 0 0 6px; }
 .pc-fig img { display: block; width: 100%; height: auto; max-height: 230px; object-fit: contain; background: #fff; border-radius: 4px; padding: 6px; box-sizing: border-box;
   transition: transform .25s ease; }
 .pc-fig img:hover { transform: scale(1.02); }
