@@ -64,11 +64,6 @@ Earp, B.D.\*, Mann, S.P.\*, **Calcott, R.**, … Savulescu, J., Clark, M.<br>
 
 \* = Equal contribution
 
-## Teaching
-
-(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '25<br>
-(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '26
-
 ## Writing {#writing}
 
 Review of Clark Elliott's *The Ghost in My Brain*, a memoir of concussion recovery.<br>
@@ -76,8 +71,13 @@ Review of Clark Elliott's *The Ghost in My Brain*, a memoir of concussion recove
 
 I write a Substack, [*Drift Diffusion*](https://substack.com/@rachelcalcott9).
 
-In a former life, I wrote for the [*Yale Daily News*](https://yaledailynews.com/author/rachel-calcott), edited the [*Yale Herald*](https://medium.com/the-yale-herald/migrating-minds-on-the-evolving-nature-of-african-brain-drain-318f2df0f858), and interned at [*Texas Monthly*](https://www.texasmonthly.com/news-politics/excess-vaccine-doses-el-paso-truckers/), the national magazine of Texas.
+In a former life, I wrote for the [*Yale Daily News*](https://yaledailynews.com/author/rachel-calcott), edited the [*Yale Herald*](https://yale-herald.com), and interned at [*Texas Monthly*](https://www.texasmonthly.com/news-politics/excess-vaccine-doses-el-paso-truckers/), the national magazine of Texas.
 
 ## Way Through {#way-through}
 
 In 2024 I got seriously concussed, and remained concussed for the next two years. Few people talk about long-lasting concussion symptoms (sometimes called post-concussion syndrome), but studies estimate that 10% to 30% of concussions result in persistent symptoms. I'm one of the lucky ones who fully recovered. After finally finding a treatment that worked for me, I built [Way Through](https://rcalcott9.github.io/pcs-website/), a website that summarizes the current scientific literature on concussion treatment. I'm always happy to chat with people trying to find their own way through (email: [rcalcott@g.harvard.edu](mailto:rcalcott@g.harvard.edu)).
+
+## Teaching
+
+(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '25<br>
+(Harvard) PSYC 1901 Methods in Experimental Psychology: Teaching Fellow, Fall '26
